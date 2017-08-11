@@ -1,8 +1,8 @@
 <template>
     <div class="page-index">
-        <img src="../assets/images/logo.png">
-        <h1>{{ title }}</h1>
-        <p>{{text}}</p>
+        <img src="../assets/images/logo.png" class="logo">
+        <h1>\{{title}}</h1>
+        <p>\{{text}}</p>
     </div>
 </template>
 
@@ -19,10 +19,14 @@
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
-    h1 {
-        font-size: 18px;
-    }
     .page-index {
         text-align: center;
+        overflow: hidden;
+        h1 {
+            font-size: 18px;
+        }
+        .logo {
+            margin-top: 30px;
+        }
     }
 </style>
